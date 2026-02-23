@@ -35,12 +35,17 @@
             Experienced in building real-time academic projects and eager to contribute to scalable software solutions.
         </p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/ezhilarasan-t-577713329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/ezhilarasan-t-577713329" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
 
-           
-             
-            
-        </div>
+    <!-- LeetCode -->
+    <a href="https://leetcode.com/YOUR_USERNAME/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+             style="width:28px; height:28px; margin-left:10px; filter:invert(1);">
+    </a>
+</div>
         <a href="resume.pdf" download class="btn">Download Resume</a>
     </div>
 
@@ -54,21 +59,30 @@
     <div class="about-img">
         <img src="logoroman.jpg" alt="">
     </div>
+
     <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
         <h3>Software Developer</h3>
-        <p id="about-text">
-           I am a Computer Science Engineering student with a strong foundation in Java, SQL, HTML, and CSS, along with practical exposure to software development concepts. I completed an offline internship focused on Java programming, object-oriented concepts, debugging, and real-time development practices, which enhanced my understanding of industry-level software development and teamwork.
 
-I have worked on projects such as a Soldier Health Monitoring System using ESP32 and a web-based Lingo Lens image search and translation tool. These projects helped me gain hands-on experience in IoT systems, web technologies, API integration, and problem-solving. I enjoy building efficient solutions and continuously improving my technical knowledge.
+        <!-- First Visible Text -->
+        <p>
+            I am a Computer Science Engineering student with a strong foundation in Java, SQL, HTML, and CSS,
+            along with practical exposure to software development concepts.
+        </p>
 
-I am eager to begin my career in the software field where I can apply my skills, learn modern technologies, and contribute to innovative development projects while growing professionally.
+        <!-- Hidden Text -->
+        <p id="more-text" style="display: none;">
+            I completed an offline internship focused on Java programming, object-oriented concepts,
+            debugging, and real-time development practices. 
 
-        <p id="additional-text" style="display: none;">
-             I have developed projects such as a Soldier Health Monitoring System using ESP32 with sensor integration and GPS tracking,
-            and Lingo Lens – an Image Search and Translation tool integrating APIs for multilingual output.
+            I developed projects such as a Soldier Health Monitoring System using ESP32 and
+            Lingo Lens – an Image Search and Translation tool integrating APIs.
+
             I am passionate about problem-solving, writing clean code, and continuously learning new technologies.
-        <button class="btn" id="read-more-btn">Read More</button>
+        </p>
+
+        <!-- Button -->
+        <button class="btn" onclick="toggleReadMore()">Read More</button>
     </div>
 </section>
 
@@ -111,68 +125,59 @@ I am eager to begin my career in the software field where I can apply my skills,
 
 <!-- portfolio design layout -->
 <section class="portfolio" id="portfolio">
-    <h2 class="heading">
-        Lestest <span>Projects</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="rklogo-removebg-preview (1).png" alt="">
-                <div class="portfolio-layer">
-                    <h3>Web Development</h3>
-                    <p>Developed a responsive and user-friendly website for [Client/Project Name], utilizing HTML, CSS, JavaScript,
-                         and Java-based backend technologies to enhance user experience and streamline functionality.
-                    </p>
-                        <a href="https://ravikurane.netlify.app"><i class="fa-solid fa-link"></i></a>
-                </div>
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+
+        <!-- Project 1 : Lingo Lens -->
+        <div class="portfolio-box">
+            <img src="lingolens.png" alt="">
+            <div class="portfolio-layer">
+                <h3>Lingo Lens</h3>
+                <p>
+                    AI based image search and translation tool with multi-language support,
+                    emoji effects and Brave-style search integration.
+                </p>
+                <a href="lingolens.html" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                </a>
             </div>
-
-            <div class="portfolio-box">
-                <img src="pro2img.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h3>User Management</h3>
-                    <p>Developed a user management system using Java and Spring Boot, enabling efficient user registration, authentication,
-                         role-based access control, and seamless data handling for an enhanced user experience.</p>
-                        <a href="https://usermanageravi.netlify.app"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="pro2img.avif" alt="">
-                <div class="portfolio-layer">
-                    <h3>Ouiz management System</h3>
-                    <p>Built a quiz management system using Java and Spring Boot, allowing users to create, manage,
-                         and take quizzes, with features for question categorization, timed assessments, and result tracking.
-                    </p>
-                        <a href="https://quizemanageravi.netkify.app"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-
-
         </div>
-</section>
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    
-    <!-- Netlify-enabled form -->
-    <form name="contact" method="POST" data-netlify="true" onsubmit="showThankYouMessage(event)">
-        <!-- Important hidden input for Netlify -->
-        <input type="hidden" name="form-name" value="contact">
+        <!-- Project 2 -->
+       <!-- Project 2 : IoT -->
+<div class="portfolio-box">
+    <img src="iotbg.jpg" alt="">
+    <div class="portfolio-layer">
+        <h3>IoT - Soldier Health Monitoring</h3>
+        <p>
+            ESP32 based real-time health monitoring system with
+            GPS tracking and sensor integration.
+        </p>
+
+        <a href="iot.html" target="_blank">
+            <i class="fa-solid fa-link"></i>
+        </a>
+    </div>
+</div>
+
+        <!-- Project 3 : IoT -->
         
-        <div class="input-box">
-            <input type="text" name="name" placeholder="Enter Your Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
+        <div class="portfolio-box">
+            <img src="pro2img.jpg" alt="">
+            <div class="portfolio-layer">
+                <h3>User Management System</h3>
+                <p>
+                    Developed using Java & Spring Boot with login authentication,
+                    role-based access and database integration.
+                </p>
+                <a href="https://usermanageravi.netlify.app" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </div>
         </div>
 
-        <div class="input-box">
-            <input type="number" name="mobile" placeholder="Enter Your Mobile Number" required>
-            <input type="text" name="subject" placeholder="Email Subject" required>
-        </div>
-
-        <textarea name="message" cols="30" rows="8" placeholder="Your Message" required></textarea>
-
-        <input type="submit" value="Send" class="btn">
-    </form>
+    </div>
 </section>
 
 <!-- Thank You Popup -->
@@ -191,7 +196,7 @@ I am eager to begin my career in the software field where I can apply my skills,
 <!-- footer design  -->
 <footer class="footer">
 <div class="footer-text">
-    <p>Copyrihgt &copy; 2026 by Ezhilarasan | All Rights Reserved</p>
+    <p>Copyright &copy; 2026 by Ezhilarasan | All Rights Reserved</p>
 </div>
 
 
@@ -294,7 +299,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
     const jobTitle = document.getElementById('job-title');
     
     // Text to type
-    const text = "Java Developer";
+    const text = "Software Developer";
     let index = 0;
     
     // Function to type the text dynamically
@@ -321,21 +326,48 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 <script>
-    function toggleReadMore(id, button) {
-        const moreText = document.getElementById(id);
-        if (moreText.style.display === "none") {
-            moreText.style.display = "block";
-            button.textContent = "Read Less";
-        } else {
-            moreText.style.display = "none";
-            button.textContent = "Read More";
-        }
+function toggleReadMore() {
+    const moreText = document.getElementById("more-text");
+    const button = document.querySelector(".about-content .btn");
+
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        button.textContent = "Read Less";
+    } else {
+        moreText.style.display = "none";
+        button.textContent = "Read More";
     }
+}
 </script>
 
+<!-- Floating Mail -->
+<!-- Floating Mail Button -->
+<a href="mailto:ezhilarasant158@gmail.com?subject=Portfolio Contact&body=Hello I saw your portfolio"
+   class="floating-mail">
+   <i class="fa-solid fa-envelope"></i>
+</a>
 
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/918807904093?text=Hello%20I%20saw%20your%20portfolio"
+   class="floating-ws" target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
