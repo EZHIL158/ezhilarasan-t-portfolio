@@ -341,12 +341,29 @@ function toggleReadMore() {
 </script>
 
 <!-- Floating Mail -->
-<!-- Floating Mail Button -->
-<a href="mailto:ezhilarasant158@gmail.com?subject=Portfolio Contact&body=Hello I saw your portfolio"
-   class="floating-mail">
+<!-- Floating Mail Smart Button -->
+<a href="mailto:ezhilarasant158@gmail.com"
+   class="floating-mail"
+   onclick="openMail(event)">
    <i class="fa-solid fa-envelope"></i>
 </a>
 
+<script>
+function openMail(e){
+    e.preventDefault();
+
+    var userAgent = navigator.userAgent.toLowerCase();
+
+    // 📱 If mobile → open mail app
+    if(/android|iphone|ipad|ipod/i.test(userAgent)){
+        window.location.href = "mailto:ezhilarasant158@gmail.com?subject=Portfolio Contact&body=Hello I saw your portfolio";
+    }
+    // 💻 If laptop → open Gmail web
+    else{
+        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=ezhilarasant158@gmail.com&su=Portfolio Contact&body=Hello I saw your portfolio","_blank");
+    }
+}
+</script>
 <!-- Floating WhatsApp -->
 <a href="https://wa.me/918807904093?text=Hello%20I%20saw%20your%20portfolio"
    class="floating-ws" target="_blank">
@@ -354,16 +371,6 @@ function toggleReadMore() {
 </a>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
 
 
 
