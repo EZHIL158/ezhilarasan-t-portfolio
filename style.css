@@ -1,3 +1,24 @@
+.resume-buttons{
+display:flex;
+gap:12px;
+margin-top:15px;
+flex-wrap:wrap;
+}
+
+.resume-buttons .btn{
+background:#0ef;
+color:#1f242d;
+border:none;
+text-align:center;
+flex:1;
+}
+
+.resume-buttons .btn:hover{
+background:#00c3cc;
+}
+
+
+
 /* General Reset and Global Styles */
 * {
     margin: 0;
@@ -872,6 +893,7 @@ transition: 5s ease;
 #ok-button:hover {
     background-color: #0097c7; /* Darker shade on hover */
 }
+
 
 
 
